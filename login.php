@@ -20,7 +20,7 @@ if (!$mysqli->connect_errno) {
             $user_name = $user['uName'];
             echo json_encode(array("success" => true, "message" => "Login successful", "id" => $user_id, "telephone" => $user_telephone, "name" => $user_name));
         } else {
-            echo json_encode(array("success" => false, "message" => "Incorrect telephone or password"));
+            echo json_encode(array("success" => false, "message" => "Incorrect Telephone number or Password"));
         }
     } else {
         echo json_encode(array("success" => false, "message" => "Query error"));
